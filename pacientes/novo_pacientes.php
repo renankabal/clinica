@@ -2,28 +2,28 @@
 <center><table border=1 width=50%>
       <input name=acao value=novo type=hidden>
       <tr>
-          <td>Nome</td>
-          <td><input name=nome size=50% autofocus required></td>
+          <td width:"10%">Nome</td>
+          <td><input name=nome size=90% autofocus required></td>
       </tr>
       <tr>
           <td>Endereco</td>
-          <td><input name=endereco size=50%required></td>
+          <td><input name=endereco size=90% required></td>
       </tr>
       <tr>
           <td>Telefone</td>
-          <td><input name=telefone size=50%required></td>
+          <td><input name=telefone size=90% required></td>
       </tr>
       <tr>
           <td>Sexo</td>
-          <td><input name=sexo size=50%required></td>
+          <td><input name=sexo size=90% required></td>
       </tr>
       <tr>
           <td>Cpf</td>
-          <td><input name=cpf size=50%required></td>
+          <td><input name=cpf size=90% required></td>
       </tr>
       <tr>
           <td>Diagnostico</td>
-          <td><textarea name=diagnostico size=50%required></textarea></td>
+          <td><textarea name=diagnostico cols=69% required></textarea></td>
       </tr>
       <tr>
         <td align=center colspan="2">

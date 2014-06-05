@@ -22,10 +22,10 @@ while ($pacientes=pg_fetch_object($cons_pacientes))
   if ($cor==$corzebrado) $cor=''; else $cor=$corzebrado;
 ?>
       <tr title='Clique para ver a descrição do paciente <?php echo "$pacientes->paciente"; ?>'>
-          <td><?php echo "$pacientes->nome"; ?></td>
+          <td><?php echo $pacientes->nome?></td>
           <td align=center>
-              <a href=javascript:alterar(<?php echo "$pacientes->codpaciente"; ?>)><img src=../imagens/alterar.png title='Clique aqui para alterar'></a>
-              <a href=javascript:excluir(<?php echo "$pacientes->codpaciente"; ?>)><img src=../imagens/excluir.png title='Clique aqui para excluir'></a>
+              <a href=javascript:alterar(<?php echo $pacientes->codpaciente ?>)><img src=../imagens/alterar.png title='Clique aqui para alterar o paciente <?php echo $pacientes->nome?>'></a>
+              <a href=javascript:excluir(<?php echo $pacientes->codpaciente ?>)><img src=../imagens/excluir.png title='Clique aqui para excluir o paciente <?php echo $pacientes->nome?>'></a>
       </tr>
 <?php }
 

@@ -9,35 +9,34 @@
                   FROM
                     pacientes
                   WHERE
-                    codpaciente=$codpaciente
-              ";
+                    codpaciente=$codpaciente";
               $cons_pacientes=pg_query($sql_pacientes);
               $pacientes=pg_fetch_object($cons_pacientes);
 
       ?>
       <tr>
-          <td>Nome</td>
-          <td><input name=nome size=50% value='<?php echo $pacientes->nome; ?>' autofocus required></td>
+          <td width:"10%">Nome</td>
+          <td><input name=nome size=90% value='<?php echo $pacientes->nome; ?>' autofocus required></td>
       </tr>
       <tr>
           <td>Endereco</td>
-          <td><input name=endereco size=50% required value='<?php echo $pacientes->endereco; ?>'></td>
+          <td><input name=endereco size=90% required value='<?php echo $pacientes->endereco; ?>'></td>
       </tr>
       <tr>
           <td>Telefone</td>
-          <td><input name=telefone size=50% required value='<?php echo $pacientes->telefone; ?>'></td>
+          <td><input name=telefone size=90% required value='<?php echo $pacientes->telefone; ?>'></td>
       </tr>
       <tr>
           <td>Sexo</td>
-          <td><input name=sexo size=50% required value='<?php echo $pacientes->sexo; ?>'></td>
+          <td><input name=sexo size=90% required value='<?php echo $pacientes->sexo; ?>'></td>
       </tr>
       <tr>
           <td>Cpf</td>
-          <td><input name=cpf size=50% required value='<?php echo $pacientes->cpf; ?>'></td>
+          <td><input name=cpf size=90% required value='<?php echo $pacientes->cpf; ?>'></td>
       </tr>
       <tr>
           <td>Diagnostico</td>
-          <td><textarea name=diagnostico size=50% required ><?php echo $pacientes->diagnostico; ?></textarea></td>
+          <td><textarea name=diagnostico cols=69% required ><?php echo $pacientes->diagnostico; ?></textarea></td>
       </tr>
       <tr>
         <td align=center colspan="2">
